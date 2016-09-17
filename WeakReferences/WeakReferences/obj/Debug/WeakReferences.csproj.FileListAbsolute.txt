@@ -1,1 +1,6 @@
 C:\My Documents\GitHub\WeakReferences\WeakReferences\WeakReferences\bin\Debug\WeakReferences.exe.config
+C:\My Documents\GitHub\WeakReferences\WeakReferences\WeakReferences\bin\Debug\WeakReferences.exe
+C:\My Documents\GitHub\WeakReferences\WeakReferences\WeakReferences\bin\Debug\WeakReferences.pdb
+C:\My Documents\GitHub\WeakReferences\WeakReferences\WeakReferences\obj\Debug\WeakReferences.csprojResolveAssemblyReference.cache
+C:\My Documents\GitHub\WeakReferences\WeakReferences\WeakReferences\obj\Debug\WeakReferences.exe
+C:\My Documents\GitHub\WeakReferences\WeakReferences\WeakReferences\obj\Debug\WeakReferences.pdb
