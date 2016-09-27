@@ -9,46 +9,21 @@ namespace WeakReferences
 {
     public class Manager
     {
-        public void PrintMessage(object o, string str)
+        public string strMessage { get { return _string; } }
+        private string _string;
+        public int intMessage { get { return _int; } }
+        private int _int;
+        public void asd(int a, int b, int c)
         {
-            Console.Write(str);
+            _int = a + b + c;
         }
-
-        //public delegate void PrintMessage(string str);
-        public event Action<object, string> events;
-
-        /*private void Check(Manager mn, Delegate s)
+        public void Message(string str)
         {
-            //var b = ((WeakDelegate)this.Target).Weak;
-           // ((WeakDelegate)s).Weak;
-            //var a = (s.Weak.Target);
-          //  if (a != null)
-         //   {
-             //   var c = (WeakDelegate)s.Weak.Target;
-            //    c.PrintMessage(this, "fs");
-       //     }
-            else
-            {
-                Manager c = mn as Manager;
-
-                c.events -= this.PrintMessage;
-            }
-        }*/
-        public void OnEvent(string str)
+            _string = str;
+        }
+        public void Nothing()
         {
-            var reff = new WeakReference((Action<object, string>)PrintMessage);
-            var a = ((Delegate)reff.Target).Method;
 
-            var w = ((MethodInfo)a).ReturnType;
-            var q = events.GetInvocationList();
-            if (events != null)
-            {
-              //  foreach (var s in q)
-               // {
-                   // Check(this, s);
-                //}
-                events(this, str);
-            }
         }
     }
 }
